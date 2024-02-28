@@ -3,9 +3,72 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Mochika's Drinks</title>
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
+    <div class="navbar">
+        <div class="logo">
+                <img src = "Sources/logo.png" width="300px">
+        </div>
+        <h1 id="mainTitle" class="title"><strong>Mochika's Menu</strong></h1>
+    </div>
+    <div class="wrapper">
+        <div class="tabs">
+          <div class="tab">
+            <input type="radio" name="css-tabs" id="tab-1" checked class="tab-switch">
+            <label for="tab-1" class="tab-label">Compra</label>
+            <div class="tab-content">
+                <label for="Producto">Producto </label>
+                <input type="text" id="ID" name="quant" placeholder="ID del Producto">
+                <br>
+                <label for="Producto">Cantidad </label>
+                <input type="text" id="quant" name="quant" placeholder="Cantidad">
+                <br>
+                <label for="Producto" id="precio" name="precio"></label>
+                <br>
+                <button onclick="pushing()"> Agregar carro </button>
+                <br>
+                <label for="Producto" id="precioCarrito" name="precioo"></label>
+                <br>
+                <button onclick="out()"> Finalizar compra </button>
+            </div>
+          </div>
+          <div class="tab">
+            <input type="radio" name="css-tabs" id="tab-2" class="tab-switch">
+            <label for="tab-2" class="tab-label">Reestock</label>
+            <div class="tab-content">
+              <label for="producto">ID</label>
+              <input type="text" id="IDIng" placeholder="">
+              <br>
+              <label for="producto">Nombre</label>
+              <input type="text" id="nombreIng" placeholder="">
+              <br>
+              <label for="producto">marca</label>
+              <input type="text" id="marcaIng" placeholder="">
+              <br>
+              <label for="producto">categoria</label>
+              <input type="text" id="cateIng" placeholder="">
+              <br>
+              <label for="producto">volumen</label>
+              <input type="text" id="volIng" placeholder="">
+              <br>
+              <label for="producto">grado alcoholico</label>
+              <input type="text" id="gradoIng" placeholder="">
+              <br>
+              <label for="producto">precio</label>
+              <input type="text" id="precioIng" placeholder="">
+              <br>
+              <label for="producto">cantidad</label>
+              <input type="text" id="cantidadIng" placeholder="">
+              <br>
+              <label for=""></label>
+              <br>
+              <button onclick="stocking()">Agregar al stock</button>
+            </div>
+          </div>
+        </div>
+      </div>
     <script src = "./indexscript.js"></script>
 </body>
 </html>
